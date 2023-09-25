@@ -1,0 +1,158 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles for the page body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; /* Black background */
+    color: #FFA500; /* Orange text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styles for the main container */
+.wrapper {
+    background: black; /* Transparent background */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Styles for the header */
+.quiz-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.quiz-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Styles for the quiz body */
+.quiz-body {
+    text-align: center;
+}
+
+.quiz-question {
+    font-size: 1.6rem;
+    margin-bottom: 2.3rem;
+}
+
+.quiz-options {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-options li {
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid black; /* Black border */
+    background-color: #FFA500; /* Orange background */
+    color: black; /* Black text */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz-options li:hover {
+    background-color: #FF6347; /* Change color to #FF6347 on hover */
+    border-color: black; /* Keep black border on hover */
+}
+
+/* Styles for the result */
+#result {
+    padding: 0.7rem 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #FFA500; /* Orange text */
+}
+
+/* Styles for the buttons */
+.quiz-foot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+#check-answer {
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid black; /* Black border */
+    background-color: #FFA500; /* Orange background */
+    color: black; /* Black text */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#check-answer:hover {
+    background-color: #FF6347; /* Darker orange on hover */
+}
+
+#play-again {
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid black; /* Black border */
+    background-color: #FFA500; /* Orange background */
+    color: black; /* Black text */
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #FFA500; /* Black button */
+    color: black; /* Orange text */
+}
+
+#play-again:hover {
+    background-color: #FF6347; /* Darker black on hover */
+}
+
+#leave-game {
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid black; /* Black border */
+    color: black; /* Black text */
+    transition: background-color 0.3s, border-color 0.3s;
+    background-color: #FF4500; /* Orange-reddish */
+}
+
+#leave-game:hover {
+    background-color: #FF6347; /* Darker orange-reddish on hover */
+}
+
+/* When an answer is selected */
+.selected {
+    background-color: white !important; /* White background */
+    color: black !important; /* Black text */
+    border-color: black !important; /* Black border */
+    box-shadow: none !important; /* Remove shadow */
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.jpg " type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Brain Teasers | @16alves02</title>
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="container flex flex-col items-center justify-center p-10">
+        <div class="setup-wrapper">
+            <header>
+                <header>
+                    <div class="logo-container">
+                        <img src="icon.jpg" alt="Brain Teasers Logo" class="logo">
+                        <h1 class="text-center text-4xl font-bold">Brain Teasers</h1>
+                    </div>
+                    <p class="text-center py-2">Choose a category and difficulty level to start the game!</p>
+                </header>
+            <div class="divider">SETUP</div>
+            <div class="settings-container w-full flex justify-center flex-col items-center mt-3">
+                <select class="select select-primary w-full max-w-xs py-2 quiz-category">
+                    <option disabled selected>Select a category</option>
+                    <option value="21">Sports</option>
+                    <option value="12">Music</option>
+                    <option value="15">Video Games</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="22">Geography</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="32">Cartoons & Animations</option>
+                </select>
+
+                <select class="select select-primary w-full max-w-xs py-2 mt-4 quiz-limit">
+                    <option disabled selected>Select number of questions</option>
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                </select>
+                <p class="text-center text-md mt-4">
+                    Select a difficulty level:
+                </p>
+                <div class="difficulty py-2">
+                    <label class="radio-label">
+                        <input type="radio" name="difficulty" class="radio radio-primary" id="easy" value="easy">
+                        <span class="radio-custom"></span>
+                        Easy
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="difficulty" class="radio radio-primary" id="medium" value="medium">
+                        <span class="radio-custom"></span>
+                        Medium
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="difficulty" class="radio radio-primary" id="hard" value="hard">
+                        <span class="radio-custom"></span>
+                        Hard
+                    </label>
+                    
+                </div>
+
+                <button class="btn btn-primary start-btn">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
